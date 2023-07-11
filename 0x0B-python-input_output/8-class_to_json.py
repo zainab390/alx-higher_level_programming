@@ -1,14 +1,12 @@
-o#!/usr/bin/python3
+#!/usr/bin/python3
 """
-This program return the dict representation of a instance of Class.
+Function that returns the dictionary description
 """
 
 
 def class_to_json(obj):
+    """returns the dictionary description with simple data structure
+       (list, dictionary, string, integer and boolean)
+       for JSON serialization of an object
     """
-    Returns the dictionary description with simple data structure
-    Args:
-      - obj: instance of class
-    """
-
-    return (obj.__dict__)
+    return obj.__dict__
