@@ -1,13 +1,9 @@
 #!/usr/bin/python3
+"""returns True if the object is exactly an instance of the specified class
+; otherwise False.
 """
-This program creates a class called MyList that inherits of the class List
-"""
 
 
-class MyList(list):
-    """
-    This class inherits form the class list an can print it's elements sorted
-    """
-
-    def print_sorted(self):
-        print(sorted(self))
+def is_same_class(obj, a_class):
+    """returns True if the object is exactly an instance"""
+    return True if type(obj) == a_class else False
