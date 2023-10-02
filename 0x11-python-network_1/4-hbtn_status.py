@@ -2,9 +2,10 @@
 """fetches https://intranet.hbtn.io/status
 using requests
 """
+import requests
+
+
 if __name__ == "__main__":
-    import requests
-    req = requests.get('https://intranet.hbtn.io/status')
-    print("Body response:")
-    print("	- type:", type(req.text))
-    print("	- content:", req.text)
+    r = requests.get('https://alx-intranet.hbtn.io/status')
+    t = r.text
+    print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(t), t))
